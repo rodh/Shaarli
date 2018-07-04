@@ -62,7 +62,7 @@ RUN chown -R nginx:nginx . \
     && ln -sf /dev/stdout /var/log/nginx/shaarli.access.log \
     && ln -sf /dev/stderr /var/log/nginx/shaarli.error.log
 
-VOLUME /var/www/shaarli/data
+VOLUME /var/www/shaarli/data /var/www/shaarli/tpl /var/www/shaarli/plugins
 
 EXPOSE 80
 
